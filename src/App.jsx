@@ -4,7 +4,9 @@ import {
     RouterProvider,
 } from 'react-router-dom';
 
-import './style.css'
+import './style.css';
+
+import { ParallaxProvider } from "react-scroll-parallax";
 
 import { Layout } from './components/Layout';
 import { Home } from './Home';
@@ -17,7 +19,7 @@ const router = createBrowserRouter([
         children: [
             {
                 children: [
-                    { index: true, element: <Home />},
+                    { index: true, element: <Home /> },
                     {
                         path: '/recipe/:id',
                         element: <RecipePage />,
@@ -30,6 +32,8 @@ const router = createBrowserRouter([
 
 export default function App() {
     return (
-        <RouterProvider router={router} />
+        <ParallaxProvider>
+            <RouterProvider router={router} />
+        </ParallaxProvider>
     );
 }
