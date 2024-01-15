@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
-import cinnRols from '../assets/cinnRols.jpg';
-import pumpkinPi from '../assets/pumpkinPi.jpg';
-import bbMuffin from '../assets/bbMuffin.jpg';
+import cinnRols from '../../assets/cinnRols.jpg';
+import pumpkinPi from '../../assets/pumpkinPi.jpg';
+import bbMuffin from '../../assets/bbMuffin.jpg';
 
 export function RecipeCards() {
 

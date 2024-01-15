@@ -4,28 +4,10 @@ import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
 import { WelcomeSection } from './components/WelcomeSection';
 import { RecipeCardsDraft } from './components/RecipeCardsDraft';
-import { RecipeCards } from './components/RecipeCards';
+import { RecipeCards } from './components/drafts/RecipeCards';
 import { recipeCollection } from './data/recipes';
 
 export function Home() {
-
-  const [defaultPosts, setDefaultPosts] = useState([])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setDefaultPosts(recipeCollection)
-    }
-    fetchData()
-
-  }, [])
-
-  useEffect(() => {
-    console.log(recipeCollection[1].title)
-  }, [setDefaultPosts, defaultPosts])
-
-  console.log(defaultPosts)
-
-
 
   return (
     <>

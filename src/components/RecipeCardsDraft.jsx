@@ -12,19 +12,21 @@ export function RecipeCardsDraft() {
             className='recipe-card'
         >
             <Parallax className='recipe-card-text'
-                translateX={[
-                    '-150%',
-                    '100%'
-                ]} >
+               translateY={[
+                '-50%',
+                '50%'
+            ]} 
+               >
                 <Parallax
                     className='recipe-card-title'
+
                 >
-                    <h1>Cinnamon Rolls</h1>
+                    <h1>Blueberry Muffins</h1>
                 </Parallax>
                 <Parallax
                     className='recipe-card-title'
                 >
-                    <Link className='link-style' to={`/recipe/${0}`}>View recipe</Link>
+                    <Link className='link-style' to={`/recipe/${1}`}>View recipe</Link>
                 </Parallax>
             </Parallax>
             <Parallax
@@ -33,7 +35,7 @@ export function RecipeCardsDraft() {
                     '50%'
                 ]}
                 className='recipe-card-img'>
-                <img src={cinnRols} />
+                <img src={bbMuffin} />
             </Parallax>
         </ParallaxBanner>
 

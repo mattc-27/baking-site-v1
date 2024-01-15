@@ -23,9 +23,10 @@ export function Layout() {
                     <div className='footer-content' >
                         <div className='footer-icons'>
                             <img src={GithubLogo} style={{ height: '30px', width: '30px', margin: '0.5%' }} />
-                            <div style={{ height: '30px', width: '30px', margin: '0.5%' }}>
+                            <Link style={{ height: '30px', width: '30px', margin: '0.5%' }}
+                                to={'https://instagram.com/getbakedwith.me'} >
                                 <InstagramLogo />
-                            </div>
+                            </Link>
                         </div>
                         <div className='footer-text'>
                             <p>Website by Matt Copeland</p>
