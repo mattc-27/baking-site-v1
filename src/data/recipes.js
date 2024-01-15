@@ -1,10 +1,14 @@
 //// Recipes 
+import CinnamonRolls from '../assets/CinnamonRolls.jpg';
+import PumpkinPie from '../assets/PumpkinPie.jpg';
 
 
 const recipeCollection = [
     {
         id: 0,
         title: 'Cinnamon Rolls',
+        image: CinnamonRolls,
+        alt: 'Cinnamon rolls',
         attribution: '',
         ingredients: [
             {
@@ -90,6 +94,8 @@ const recipeCollection = [
     {
         id: 1,
         title: 'Blueberry Muffins',
+        image: PumpkinPie,
+        alt: 'Pumpkin pie',
         attribution: '',
         ingredients: [
             {

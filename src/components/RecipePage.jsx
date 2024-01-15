@@ -29,10 +29,8 @@ export function RecipePage() {
     }
 
     return (
-        <div className='main-container'>
-            <div className='recipe-details'>
-                <RecipeView data={data} />
-            </div>
-        </div>
+
+        <RecipeView data={data} />
+
     );
 }

@@ -1,32 +1,40 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import { InstagramLogo } from './InstagramLogo';
+import GithubLogo from '../assets/GithubLogo.png';
 
 export function Layout() {
 
     return (
+
         <>
             <header>
                 <div className='header-content'>
                     <Link className='header-link' to={'/'}>
-                        <h1>Get Baked with Matt</h1>
+                        <h1>GetBakedWithMe</h1>
                     </Link>
                 </div>
             </header>
-            <>
-                <Outlet />
-            </>
+            {/** **/}
+            <Outlet />
+            {/** **/}
             <footer>
-                <div className='footer-content'>
-                    <p>Footer content</p>
-                    <div className='col content-center items-center' style={{ backgroundColor: 'none' }}>
-                        <div style={{ height: '50px', width: '50px' }}>
-                            <InstagramLogo />
+                <div className='footer-container'>
+                    <div className='footer-content' >
+                        <div className='footer-icons'>
+                            <img src={GithubLogo} style={{ height: '30px', width: '30px', margin: '0.5%' }} />
+                            <Link style={{ height: '30px', width: '30px', margin: '0.5%' }}
+                                to={'https://instagram.com/getbakedwith.me'} >
+                                <InstagramLogo />
+                            </Link>
+                        </div>
+                        <div className='footer-text'>
+                            <p>Website by Matt Copeland</p>
                         </div>
                     </div>
                 </div>
             </footer>
         </>
-    );
 
+    );
 }
