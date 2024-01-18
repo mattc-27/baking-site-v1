@@ -12,14 +12,13 @@ export function RecipeCardsDraft() {
             className='recipe-card'
         >
             <Parallax className='recipe-card-text'
-               translateY={[
-                '-50%',
-                '50%'
-            ]} 
-               >
+                translateY={[
+                    '-50%',
+                    '50%'
+                ]}
+            >
                 <Parallax
                     className='recipe-card-title'
-
                 >
                     <h1>Blueberry Muffins</h1>
                 </Parallax>

@@ -1,13 +1,15 @@
 //// Recipes 
-import CinnamonRolls from '../assets/CinnamonRolls.jpg';
-import PumpkinPie from '../assets/PumpkinPie.jpg';
 
+//import CinnamonRolls from '../assets/CinnamonRolls.jpg';
+//import PumpkinPie from '../assets/PumpkinPie.jpg';
+import cinnRols from '../assets/cinnRols.jpg';
+import bbMuffin from '../assets/bbMuffin.jpg';
 
 const recipeCollection = [
     {
         id: 0,
         title: 'Cinnamon Rolls',
-        image: CinnamonRolls,
+        image: cinnRols,
         alt: 'Cinnamon rolls',
         attribution: '',
         ingredients: [
@@ -43,7 +45,7 @@ const recipeCollection = [
             },
             {
                 ing: 6,
-                name: 'Plant based butter',
+                name: 'Plant-based butter',
                 quantity: 0.25,
                 unit: 'Cups'
             },
@@ -51,7 +53,7 @@ const recipeCollection = [
                 ing: 7,
                 name: 'Eggs',
                 quantity: 2,
-                unit: 'Teaspoon',
+                unit: '1 egg plus 1 yolk',
                 notes: '1 egg, plus 1 egg yolk.'
             },
             {
@@ -84,98 +86,119 @@ const recipeCollection = [
             },
         ],
         instructions: [
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui amet molestias doloribus in dolorem ipsa eligendi.',
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui amet molestias doloribus in dolorem ipsa eligendi.',
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui amet molestias doloribus in dolorem ipsa eligendi.',
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui amet molestias doloribus in dolorem ipsa eligendi.',
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui amet molestias doloribus in dolorem ipsa eligendi.'
+            'Add package of yeast to warm milk, ~105-115°F and let activiate approxximately 5min',
+            'Once yeast actives - stir in melted butter, eggs, sugar. Add a dash of vanilla and/or orange extract.',
+            'Add the flour mixture and give it a good knead.',
+            'Allow dough to rise for 1-2 hrs',
+            'Once dough is proofed, roll into 13x9 rectangle and spread soft butter followed by brown sugar and cinnamon mixture. ',
+            'Roll into a log and cut into individual pieces (should get about 10',
+            'Place into pan and allow for a second rise, about one hour.',
+            'Heat oven to 350°F. Bake rolls for ~30 minutes or ubtil golden brown.'
         ]
     },
     {
         id: 1,
         title: 'Blueberry Muffins',
-        image: PumpkinPie,
+        image: bbMuffin,
         alt: 'Pumpkin pie',
         attribution: '',
         ingredients: [
             {
                 ing: 1,
                 name: 'All purpose flour',
-                quantity: 2,
+                quantity: 1,
                 unit: 'Cup'
             },
             {
                 ing: 2,
+                name: 'Cake four',
+                quantity: 1,
+                unit: 'Cup'
+            },
+            {
+                ing: 3,
+                name: 'Baking powder',
+                quantity: 1,
+                unit: 'Teaspoon'
+            },
+            {
+                ing: 4,
+                name: 'Baking soda',
+                quantity: 0.5,
+                unit: 'Teaspoon'
+            },
+            {
+                ing: 5,
                 name: 'Salt',
                 quantity: 0.5,
                 unit: 'Teaspoon'
             },
             {
-                ing: 3,
-                name: 'Plant-based butter',
-                quantity: 0.25,
-                unit: 'Cup'
-            },
-            {
-                ing: 4,
-                name: 'Applesauce',
-                quantity: 0.33,
-                unit: 'Cup'
-            },
-            {
-                ing: 5,
-                name: 'Cane sugar',
-                quantity: 0.15,
-                unit: 'Cup'
-            },
-            {
                 ing: 6,
-                name: 'Honey',
-                quantity: 3,
-                unit: 'Tablespoon'
+                name: 'Vegetable oil',
+                quantity: 1,
+                unit: 'Tablespoons'
             },
             {
                 ing: 7,
+                name: 'Applesauce',
+                quantity: 0.30,
+                unit: 'Cup'
+            },
+            {
+                ing: 8,
+                name: 'Cane sugar',
+                quantity: 0.5,
+                unit: 'Cup'
+            },
+            {
+                ing: 9,
+                name: 'Honey',
+                quantity: 1,
+                unit: 'Tablespoon'
+            },
+            {
+                ing: 10,
                 name: 'Eggs',
                 quantity: 2,
                 unit: '',
                 //notes: '1 egg, plus 1 egg yolk.'
             },
             {
-                ing: 8,
+                ing: 11,
                 name: 'Vanilla extract',
                 quantity: 1,
                 unit: 'Teaspoon'
             },
             {
-                ing: 9,
+                ing: 12,
+                name: 'Orange extract',
+                quantity: 0.25,
+                unit: 'Teaspoon'
+            },
+            {
+                ing: 13,
                 name: 'Oat milk',
-                quantity: 0.66,
+                quantity: 0.5,
                 unit: 'Cup',
             },
             {
-                ing: 10,
-                name: 'Yogurt',
-                quantity: 0.33,
-                unit: 'Cup',
+                ing: 14,
+                name: 'Sour cream',
+                quantity: 1,
+                unit: 'Tablespoon',
             },
             {
-                ing: 11,
+                ing: 15,
                 name: 'Blueberries',
                 quantity: 1,
                 unit: 'Cup'
             },
             {
-                ing: 12,
-                name: 'Baking powder',
-                quantity: 1,
-                unit: 'Teaspoon'
-            },
-            {
-                ing: 13,
-                name: 'Baking soda',
-                quantity: 0.25,
-                unit: 'Teaspoon'
+                ing: 16,
+                name: 'Lemon zest',
+                quantity: 0.5,
+                unit: 'Tablespoon'
             },
         ],
         instructions: [
@@ -192,62 +215,3 @@ const recipeCollection = [
 
 
 export { recipeCollection };
-
-
-/* 
-    {
-        id: 1,
-        title: 'Apple Pie',
-        attribution: '',
-        ingredients: [
-            {
-                ing: 1,
-                name: 'All purpose flour',
-                quantity: 1,
-                unit: 'Cup'
-            },
-            {
-                ing: 2,
-                name: 'Salt',
-                quantity: 1,
-                unit: 'Teaspoon'
-            },
-            {
-                ing: 3,
-                name: 'Plant based butter',
-                quantity: 0.25,
-                unit: 'Cups'
-            },
-            {
-                ing: 8,
-                name: 'Vanilla extract',
-                quantity: 1,
-                unit: 'Teaspoon',
-                notes: ''
-            },
-            {
-                ing: 9,
-                name: 'Cane sugar',
-                quantity: 0.33,
-                unit: 'Cups',
-                notes: ''
-            },
-            {
-                ing: 10,
-                name: 'Dark brown sugar',
-                quantity: 0.66,
-                unit: 'Cups',
-                notes: ''
-            },
-            {
-                ing: 11,
-                name: 'Cinnamon',
-                quantity: 1,
-                unit: 'Tablespoon',
-                notes: ''
-            },
-
-        ],
-        instructions: ''
-
-    }*/
